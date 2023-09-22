@@ -1,11 +1,3 @@
-# gxbuild
-gxbuild is a build system for applications using C and raylib.
-
-## Features
-* Supports building for Windows, Linux, Web and Android
-* Uses shell scripts, making it easy to run on all platforms with minimal prior setup
-* Automates most of the setup process: installing dependencies, downloading and compiling raylib
-
 ## Setting up
 1. Change the options in `config.sh` to your liking (app name, compiler flags).
 2. If you're on Windows, download [w64devkit](https://github.com/skeeto/w64devkit/releases). Make sure you get a release zip, not the source code. Extract the archive somewhere and run `w64devkit.exe`. On Linux, just open a terminal.
