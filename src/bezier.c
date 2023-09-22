@@ -55,7 +55,14 @@ for( float i = 0 ; i < 1 ; i += 0.0001 )
     float x = getPt( arrays[index][0].x , arrays[index][1].x , i );
     float y = getPt( arrays[index][0].y , arrays[index][1].y , i );
             
-    DrawPixelV((Vector2){x, y}, RED);
+    DrawPixelV((Vector2){x, y+1}, YELLOW);
+    DrawPixelV((Vector2){x, y-1}, YELLOW);
+    DrawPixelV((Vector2){x, y+2}, YELLOW);
+    DrawPixelV((Vector2){x, y-2}, YELLOW);
+    DrawPixelV((Vector2){x, y+3}, YELLOW);
+    DrawPixelV((Vector2){x, y-3}, YELLOW);
+    DrawPixelV((Vector2){x, y}, YELLOW);
+    
   /*
       // The Green Lines
     xa = getPt( x1 , x2 , i );
